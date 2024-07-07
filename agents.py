@@ -12,15 +12,15 @@ st.title("Website Scraping and Testing Automation")
 # website_url = st.text_input("Enter Website URL:")
 
 tool2 = SeleniumScrapingTool(website_url='https://www.saucedemo.com/v1/')
-os.environ["SERPER_API_KEY"] = "586dd44d3544a918ea21aa60b2a99741bed6f97d"
+os.environ["SERPER_API_KEY"] = "API_KEY"
 search_tool = SerperDevTool()
 
 llm1 = ChatGroq(
-            api_key="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",
+            api_key="API_KEY",
             model= "llama3-70b-8192"  #"mixtral-8x7b-32768"
         )
 
-# llm2 = GoogleGenerativeAI(model="models/gemini-1.5-flash", google_api_key="AIzaSyAPO8LmtX0hfpnsRYARR9hG7l7bXXohD9g")
+# llm2 = GoogleGenerativeAI(model="models/gemini-1.5-flash", google_api_key="API_KEY")
 
 llm3 = Ollama(model="stable-code:3b-code-q4_0")
 
